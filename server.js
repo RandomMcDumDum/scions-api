@@ -27,12 +27,12 @@ const scions = {
 };
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/index.html");
+  response.sendFile(__dirname + "/html/index.html");
 });
 
-app.get("/js/main.js", (request, response) => {
-  response.sendFile(__dirname + "/js/main.js");
-});
+//app.get("/js/main.js", (request, response) => {
+//  response.sendFile(__dirname + "/js/main.js");
+//});
 
 app.get("/api", (request, response) => {
   response.json(scions);
