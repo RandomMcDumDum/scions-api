@@ -48,6 +48,6 @@ app.get("/api/:scionName", (request, response) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server is running on port ${PORT}. You better go catch it!`);
 });
